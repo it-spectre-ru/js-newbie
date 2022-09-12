@@ -1,5 +1,9 @@
-const basket = [{ price: 1500 }, { price: 25 }, { price: 50 }];
+const basket = [
+  { name: 'Laptop', price: 1500 },
+  { name: 'Mouse', price: 25 },
+  { name: 'Keyboard', price: 50 },
+];
 
-for (const item of basket) {
-  console.log(`Prices: ${item.price}`);
+for (const { name, price } of basket) {
+  console.log(`Prices: ${name} is ${price}`);
 }
