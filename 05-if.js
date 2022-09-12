@@ -6,3 +6,13 @@ const calculateSubtotal = (goods) => {
   }
   return amount;
 };
+
+// Прием Return early
+
+if (item.price < 0) throw 'Negative price';
+amount += item.price;
+
+if (item.price < 0) {
+  throw 'Negative price';
+}
+amount += item.price;
