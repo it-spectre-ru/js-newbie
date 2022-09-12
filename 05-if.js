@@ -26,3 +26,8 @@ if (len > 0) {
   total += calculateSubtotal(goods);
   count += len;
 }
+
+// Тернарный оператор
+
+amount += item.price < 0 ? 0 : item.price;
+amount += item.price > 0 ? item.price : 0;
