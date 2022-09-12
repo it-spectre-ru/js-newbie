@@ -16,3 +16,14 @@ if (item.price < 0) {
   return;
 }
 amount += item.price;
+
+// Вынос промежуточных переменных
+
+const goods = order[groupName];
+if (goods) {
+  const len = goods.length;
+  if (len > 0) {
+    total += calculateSubtotal(goods);
+    count += len;
+  }
+}
