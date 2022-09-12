@@ -1,9 +1,10 @@
-const basket = [
-  { name: 'Laptop', price: 1500 },
-  { name: 'Mouse', price: 25 },
-  { name: 'Keyboard', price: 50 },
-];
+const basket = {
+  Laptop: 1500,
+  Mouse: 300,
+  Keyboard: 10,
+};
 
-for (const { name, price } of basket) {
-  console.log(`Prices: ${name} is ${price}`);
+for (const key in basket) {
+  const price = basket[key];
+  console.log(`Price of ${key} is ${price}`);
 }
