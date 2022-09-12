@@ -4,7 +4,6 @@ const basket = {
   Keyboard: 10,
 };
 
-for (const name of Object.keys(basket)) {
-  const price = basket[name];
+for (const [name, price] of Object.entries(basket)) {
   console.log(`Price of ${name} is ${price}`);
 }
