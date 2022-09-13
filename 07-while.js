@@ -1,9 +1,8 @@
-let a = 0;
-while (a < 10) {
-  console.log(a++);
-}
-
 let i = 0;
-do {
-  console.log(i++);
-} while (i < 10);
+while (i < 10) {
+  i++;
+  console.log('Priv', i);
+  if (i === 5) continue;
+  console.log('World');
+}
+console.log('End');
