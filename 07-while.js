@@ -1,8 +1,9 @@
-let i = 0;
-while (i < 10) {
-  i++;
-  console.log('Priv', i);
-  if (i === 5) break;
-  console.log('World');
-}
-console.log('End');
+const sum = (...args) => {
+  let value = 0;
+  while (args.length > 0) {
+    value += args.pop();
+  }
+  return value;
+};
+
+console.log(sum(1, 2, 3, 4, 5));
