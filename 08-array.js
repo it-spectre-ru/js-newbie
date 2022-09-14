@@ -7,5 +7,5 @@ const purchase = {
   Texttile: [{ name: 'Bag', price: 50 }],
 };
 
-console.log(purchase.Electronics[0]);
-console.log(purchase['Electronics'][0]);
+console.log(purchase.Electronics[2].name);
+console.log(purchase['Electronics'][2].price);
