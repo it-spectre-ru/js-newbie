@@ -7,6 +7,6 @@ const purchase = {
   Texttile: [{ name: 'Bag', price: 50 }],
 };
 
-const keys = Object.keys(purchase);
+const keys = Object.entries(purchase);
 
 console.log(keys);
