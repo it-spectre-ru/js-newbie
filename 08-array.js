@@ -1,7 +1,7 @@
 const prices = [10, 1500, 100, 50];
 
-const price = prices.find((item) => item > 100);
+const names = ['Laptop', 'Mouse', 'HDMI'];
+console.log(names.join('; '));
 
-if (prices.includes(100)) console.log('100 is here');
-
-console.log({ price });
+const index = names.indexOf('Mouse');
+console.log({ index });
