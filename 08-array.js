@@ -1,13 +1,7 @@
-const purchase = {
-  Electronics: [
-    { name: 'Laptop', price: 1500 },
-    { name: 'Keyboard', price: 500 },
-    { name: 'HDMI', price: 10 },
-  ],
-  Texttile: [{ name: 'Bag', price: 50 }],
-};
+const prices = [10, 1500, 100, 50];
 
-const items = purchase.Electronics.pop();
+const price = prices.find((item) => item > 100);
 
-console.log(items);
-console.log(purchase.Electronics);
+if (prices.includes(100)) console.log('100 is here');
+
+console.log({ price });
