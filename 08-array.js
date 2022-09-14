@@ -1,7 +1,12 @@
-const prices = [10, 1500, 100, 50];
+const purchase = {
+  Electronics: [
+    { name: 'Laptop', price: 1500 },
+    { name: 'Keyboard', price: 500 },
+    { name: 'HDMI', price: 10 },
+  ],
+  Texttile: [{ name: 'Bag', price: 50 }],
+};
 
-const names = ['Laptop', 'Mouse', 'HDMI'];
-console.log(names.join('; '));
+const list1 = purchase.Electronics.filter((item) => item.price > 50);
 
-const index = names.indexOf('Mouse');
-console.log({ index });
+console.log(list1);
