@@ -7,6 +7,6 @@ const purchase = {
   Texttile: [{ name: 'Bag', price: 50 }],
 };
 
-const items = [...purchase.Electronics];
+const items = [...purchase.Electronics, purchase.Texttile];
 
 console.log(items);
