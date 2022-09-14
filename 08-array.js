@@ -7,6 +7,6 @@ const purchase = {
   Texttile: [{ name: 'Bag', price: 50 }],
 };
 
-const items = [...purchase.Electronics, purchase.Texttile];
+const items = purchase.Electronics.push({ name: 'Mouse', price: 21 });
 
-console.log(items);
+console.log(purchase.Electronics);
