@@ -1,7 +1,6 @@
 const basket = {
   Laptop: 1500,
   Keyboard: 100,
-  Mouse: 25,
 };
 
 const calcalateTotal = (obj) => {
@@ -12,10 +11,10 @@ const calcalateTotal = (obj) => {
   return total;
 };
 
-const mixTotal = (obj) => {
-  obj.total = calcalateTotal(obj);
+const addTotal = (obj) => {
+  return { ...obj, total: calcalateTotal(obj) };
 };
 
-mixTotal(basket);
+const order = addTotal(basket);
 
-console.log(basket);
+console.log(order);
