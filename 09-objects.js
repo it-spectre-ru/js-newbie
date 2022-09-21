@@ -8,3 +8,4 @@ const purchase = {
 };
 
 console.log({ purchase });
+console.dir(purchase, { depth: null });
