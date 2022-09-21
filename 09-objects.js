@@ -8,3 +8,8 @@ const purchase = {
 };
 
 console.log(JSON.stringify(purchase));
+
+const json = JSON.stringify(purchase);
+const obj = JSON.parse(json);
+
+console.log('#####', obj);
