@@ -4,6 +4,6 @@ const basket = {
   Mouse: 25,
 };
 
-const order = { ...basket, HDMI: 10, Mouse: 20 };
+const order = { HDMI: 10, Mouse: 20, ...basket };
 
 console.log(order);
