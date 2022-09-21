@@ -7,5 +7,4 @@ const purchase = {
   Textile: [{ name: 'Bag', price: 50 }],
 };
 
-console.log({ purchase });
-console.dir(purchase, { depth: null });
+console.log(JSON.stringify(purchase));
