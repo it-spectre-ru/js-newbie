@@ -4,5 +4,7 @@ const basket = {
   HDMI: 10,
 };
 
-basket['Mouse'] = 25;
+const key = 'Mouse1';
+basket[key] = 25;
+
 console.log(basket);
