@@ -4,6 +4,18 @@ const basket = {
   Mouse: 25,
 };
 
-const order = { HDMI: 10, Mouse: 20, ...basket };
+const calcalateTotal = (obj) => {
+  let total = 0;
+  for (const key in obj) {
+    total += obj[key];
+  }
+  return total;
+};
 
-console.log(order);
+const mixTotal = (obj) => {
+  obj.total = calcalateTotal(obj);
+};
+
+mixTotal(basket);
+
+console.log(basket);
