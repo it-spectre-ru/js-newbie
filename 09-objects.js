@@ -1,12 +1,13 @@
 const basket = {
   Laptop: 1500,
   Keyboard: 100,
-  HDMI: 10,
 };
 
-const key = 'Mouse1';
-basket[key] = 25;
+const goods = {
+  HDMI: 10,
+  Mouse: 22,
+};
 
-delete basket.Keyboard;
+const order = { ...basket, ...goods };
 
-console.log(basket);
+console.log(order);
