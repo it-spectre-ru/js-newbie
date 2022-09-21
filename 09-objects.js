@@ -1,13 +1,9 @@
 const basket = {
   Laptop: 1500,
   Keyboard: 100,
+  Mouse: 25,
 };
 
-const goods = {
-  HDMI: 10,
-  Mouse: 22,
-};
-
-const order = { ...basket, ...goods };
+const order = { ...basket, HDMI: 10, Mouse: 20 };
 
 console.log(order);
