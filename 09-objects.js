@@ -7,4 +7,6 @@ const basket = {
 const key = 'Mouse1';
 basket[key] = 25;
 
+delete basket['Laptop'];
+
 console.log(basket);
