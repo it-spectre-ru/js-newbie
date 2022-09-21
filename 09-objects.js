@@ -11,10 +11,10 @@ const calcalateTotal = (obj) => {
   return total;
 };
 
-const addTotal = (obj) => {
-  return { ...obj, total: calcalateTotal(obj) };
+const goodsTotal = (goods) => {
+  return { goods, total: calcalateTotal(goods) };
 };
 
-const order = addTotal(basket);
+const order = goodsTotal(basket);
 
 console.log(order);
