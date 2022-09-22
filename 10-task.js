@@ -3,10 +3,9 @@ const items = [{ price: 40 }, { price: -120 }, { price: '505' }, { price: 350 }]
 const calculateTotal = (goods) => {
   let total = 0;
   for (const item of goods) {
-    if (typeof item.price === 'number') {
-      if (item.price > 0) {
-        total += item.price;
-      }
+    price = item.price;
+    if (typeof price === 'number' && price > 0) {
+      total += price;
     }
   }
   return total;
