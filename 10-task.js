@@ -1,5 +1,15 @@
-// Задача 2. Теперь давайте сделаем функцию, которая вычислит сумму всей покупки. Дайте функции понятное название и добавьте такие правила: нужно проверять, является ли цена числом (при помощи typeof), суммируем только положительные цены, а если находим не число или отрицательное число, то выдаем ошибку при помощи throw.
+const items = [{ price: 40 }, { price: 120 }, { price: 505 }, { price: 350 }];
 
-// В ходе выполнения задания, поищите в интернете документацию по for..of, throw, condole.log, функциям и массивам. Лучше всего искать в MDN (mozilla developers network).
+const calculateTotal = (obj) => {
+  items.forEach((item, index, array) => {
+    console.log(item['price']);
+  });
+};
 
-// Добейтесь, чтобы код запускался в командной строке через node.js или в браузере.
+console.log(calculateTotal(items));
+
+// console.log(items[0]['price']);
+
+// for (const item of items) {
+//   console.log(`Price: ${item.price}`);
+// }
