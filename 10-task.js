@@ -4,7 +4,9 @@ const calculateTotal = (goods) => {
   let total = 0;
   for (const item of goods) {
     if (typeof item.price === 'number') {
-      total += item.price;
+      if (item.price > 0) {
+        total += item.price;
+      }
     }
   }
   return total;
