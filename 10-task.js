@@ -1,4 +1,4 @@
-const items = [{ price: 40 }, { price: -120 }, { price: '505' }, { price: 350 }];
+const items = [{ price: 250 }, { price: -150 }, { price: 150 }, { price: 500 }];
 
 const calculateTotal = (goods) => {
   let total = 0;
