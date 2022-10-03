@@ -1,12 +1,5 @@
-const items = [{ price: 250 }, { price: 150 }];
+const items = [{ price: 250 }, { price: -150 }, { price: 150 }, { price: 500 }];
 
-const calculateTotal = (goods) => {
-  let total = 0;
-  for (const { price } of goods) {
-    if (typeof price !== 'number') continue;
-    if (price > 0) total += price;
-  }
-  return total;
-};
+let result = items.map(({ price }) => price);
 
-console.log(calculateTotal(items));
+console.log(result);
