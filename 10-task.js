@@ -1,14 +1,25 @@
-const items = [{ price: -50 }, { price: 50 }, { price: '100' }, { price: 100 }];
+const purchase = {
+  Electronics: [
+    { name: 'Laptop', price: 1500 },
+    { name: 'Keyboard', price: 100 },
+  ],
+  Textile: [
+    { name: 'Bag', price: 50 },
+    { name: 'Laptop', price: 2500 },
+  ],
+};
 
-// let result = items.map(({ price }) => {
-//   price;
-//   if (price > 0) console.log(price);
-// });
+const find = (basket, name) => {
+  const result = [];
+  for (const key in basket) {
+    const items = basket[key];
+    for (const item of items) {
+      if (item.name === name) result.push(item);
+    }
+  }
+  return result;
+};
 
-const calculateTotal = items.reduce((total, item) => {
-  if (item.price > 0 && typeof item.price === 'number') return (total += item.price);
-  return total;
-}, 0);
+const result = find(purchase, 'Laptop');
 
-console.log(calculateTotal);
-// console.log(result);
+console.log(result);
