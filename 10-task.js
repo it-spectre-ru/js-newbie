@@ -22,4 +22,13 @@ const find = (basket, name) => {
 
 const result = find(purchase, 'Laptop');
 
-console.log(result);
+const added = result.reduce((sum, indexValue, index, result) => {
+  if (index === 0) {
+    console.log(`${sum} `);
+    return 0; // <--- here
+  } else {
+    return (sum += indexValue);
+  }
+}, 0);
+
+console.log(added);
