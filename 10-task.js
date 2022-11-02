@@ -1,10 +1,12 @@
 const find = (basket, name) => {
+  const result = [];
   for (const key in basket) {
     const items = basket[key];
     for (const item of items) {
-      if (item.name === name) return item;
+      if (item.name === name) result.push(item);
     }
   }
+  return result;
 };
 
 const purchase = {
@@ -15,8 +17,9 @@ const purchase = {
   ],
   Textile: [
     { name: 'Bag', price: 50 },
-    { name: 'Laptop', price: 2500 },
+    { name: 'Mousepad', price: 15 },
   ],
+  WEWEWEW: [{ name: 'Laptop', price: 1400 }],
 };
 
 const result = find(purchase, 'Laptop');
