@@ -1,7 +1,7 @@
-const electronics = {
-  Laptop: 1500,
-  Keyboard: 100,
-};
+const goods = new Map();
 
-const goods = new Map(Object.entries(electronics));
-console.log(goods);
+goods.set('Laptop', 1500);
+goods.set('Keyboard', 100);
+
+const electronics = Object.fromEntries(goods);
+console.log(electronics);
