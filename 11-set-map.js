@@ -1,7 +1,12 @@
-const goods = new Map();
+const electronics = new Map();
 
-goods.set('Laptop', 1500);
-goods.set('Keyboard', 100);
+electronics.set('Laptop', 1500);
+electronics.set('Keyboard', 100);
 
-const electronics = Object.fromEntries(goods);
-console.log(electronics);
+const textile = new Map();
+
+textile.set('Bag', 50);
+
+const goods = new Map([...electronics, ...textile]);
+
+console.log(goods);
