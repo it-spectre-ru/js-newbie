@@ -1,5 +1,5 @@
-const goods = ['Laptop', 'Keyboard', 'Mouse'];
+const goods = new Set(['1', '2', '3']);
 
-const basket = new Set(goods);
-
-console.log(basket);
+for (const name of goods) {
+  console.log(`Element: ${name}`);
+}
