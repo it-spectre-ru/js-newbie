@@ -1,7 +1,7 @@
-const electronics = new Map();
-electronics.set('Laptop', 1500);
-electronics.set('Keyboard', 100);
+const goods = new Map();
+goods.set('Laptop', 1500);
+goods.set('Keyboard', 100);
 
-const price = electronics.get('Laptop');
-
-console.log({ price });
+if (goods.has('Laptop')) {
+  console.log('We have a Laptop');
+}
