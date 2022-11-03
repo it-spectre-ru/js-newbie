@@ -1,6 +1,5 @@
-const order = new Set(['Laptop', 'Keyboard', 'Mouse']);
-const sold = new Set(['Textile', 'Keyboard']);
+const electronics = new Map();
+electronics.set('Laptop', 1500);
+electronics.set('Keyboard', 100);
 
-const basket = new Set([...order].filter((item) => !sold.has(item)));
-
-console.log(basket);
+console.log(electronics);
