@@ -1,5 +1,8 @@
-const goods = new Set(['1', '2', '3']);
+const goods = ['1', '2', '3'];
 
-for (const name of goods) {
-  console.log(`Element: ${name}`);
-}
+const basket = new Set(goods);
+
+basket.add('4');
+basket.add('5');
+
+console.log(basket);
