@@ -1,5 +1,7 @@
-const electronics = new Map();
-electronics.set('Laptop', 1500);
-electronics.set('Keyboard', 100);
+const goods = new Map();
+goods.set('Laptop', 1500);
+goods.set('Keyboard', 100);
 
-console.log(electronics);
+for (const [key, value] of goods) {
+  console.log(`Price of ${key} is ${value}`);
+}
